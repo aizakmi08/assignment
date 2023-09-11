@@ -1,0 +1,18 @@
+<html lang = "en">
+<body>
+   <h2>Changing an Text</h2>
+   <p id = "upper">The text of the below element will be replaced by the text you enter in input bar once you click the button.</p>
+   <input type = "text" id = "inp"> <br> <br>
+   <button id = "btn" onclick = "changeImage()"> Click to change the Text </button>
+   <p id = "para1">This is the initial text</p>
+   <script>
+      var para1 = document.getElementById("para1");
+      var para2 = document.getElementById("para2");
+      function changeImage() {
+         var inp = document.getElementById("inp");
+         var enteredText = inp.value;
+         para1.innerText = enteredText;
+      }
+   </script>
+</body>
+</html>
